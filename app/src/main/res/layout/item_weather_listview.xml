@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/card_margin"
+    android:padding="@dimen/icon_padding">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:id="@+id/city_icon"
+            android:paddingRight="@dimen/icon_padding" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/city_name"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/big_font_size"
+                android:paddingBottom="@dimen/small_padding" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/city_temperature"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/big_font_size"
+                    android:paddingRight="@dimen/small_padding"
+                    android:paddingBottom="@dimen/small_padding" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/city_weather_condition"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/middle_font_size" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/city_feels_temp"
+                            android:textSize="@dimen/small_font_size"
+                            android:paddingRight="@dimen/small_padding" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/city_precipitation"
+                            android:textSize="@dimen/small_font_size"
+                            android:paddingLeft="@dimen/small_padding" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/favourite_row"
+                android:visibility="gone"
+                android:paddingLeft="@dimen/small_padding">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/city_humidity"
+                    android:textSize="@dimen/small_font_size"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/city_pressure"
+                    android:textSize="@dimen/small_font_size"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/city_wind_speed"
+                    android:textSize="@dimen/small_font_size"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/small_font_size"
+                android:id="@+id/timestamp_view"
+                android:padding="@dimen/small_padding" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+
+    <string name="temp_text">%s°</string>
+    <string name="feels_temp_text">Feels Like %1$s°</string>
+    <string name="precipitation_text">Prec. %1$smm</string>
+    <string name="humidity_text">Humidity: %1$s%%</string>
+    <string name="pressure_text">Barom: %1$s</string>
+    <string name="wind_speed_text">Wind speed: %1$s km/h</string>
+    <string name="time_text">Observed at %1$s</string>
+</resources>
